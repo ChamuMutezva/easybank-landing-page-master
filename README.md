@@ -1,4 +1,5 @@
 # Frontend Mentor - Easybank landing page
+Live-preview link https://chamumutezva.github.io/easybank-landing-page-master/
 
 ![Design preview for the Easybank landing page coding challenge](./design/desktop-preview.jpg)
 
