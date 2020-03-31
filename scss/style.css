@@ -51,6 +51,10 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
+.nav__modal__item {
+  margin-bottom: 30px;
+}
+
 .nav__modal {
   position: absolute;
   display: none;
@@ -61,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  row-gap: 30px;
+  /* row-gap: 30px;*/
   width: 80%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -69,6 +73,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: white;
   border-radius: 20px;
   top: 100px;
+  left: 10%;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -78,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
 }
 
-.morkups__img {
+.mockups__img {
   width: 90%;
   display: block;
   margin: auto;
@@ -115,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-.morkups {
+.mockups {
   position: relative;
   background-image: url("../images/bg-intro-mobile.svg");
   background-size: 100% 82%;
@@ -239,8 +244,11 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
+  /* column-gap: 20px;*/
+}
+
+.socials__links li {
+  margin: 0 10px;
 }
 
 .footerMain {
