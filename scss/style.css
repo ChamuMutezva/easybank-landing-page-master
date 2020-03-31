@@ -1,42 +1,82 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
 body {
   font-family: 'Public Sans', sans-serif;
   font-size: 18px;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
 
 p {
   text-align: center;
   font-size: 14px;
   opacity: 0.3;
-  line-height: 1.5rem; }
+  line-height: 1.5rem;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
-  text-align: center; }
+  text-align: center;
+}
 
 .nav__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  position: relative; }
-  .nav__controls .nav__controls--btn {
-    position: relative;
-    display: none; }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.nav__controls .nav__controls--btn {
+  position: relative;
+  display: none;
+}
 
 .nav__modal {
+  position: absolute;
   display: none;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   row-gap: 30px;
   width: 80%;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: auto;
-  background-color: burlywood;
-  border-radius: 20px; }
+  background-color: white;
+  border-radius: 20px;
+  top: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.nav__modal a {
+  color: black;
+  font-size: 15px;
+}
 
 .morkups__img {
   width: 90%;
@@ -44,33 +84,43 @@ h1, h2, h3, h4, h5, h6 {
   margin: auto;
   position: relative;
   top: -118px;
-  z-index: 1; }
+  z-index: 1;
+}
 
 .headerContent {
   background-color: #fafafa;
-  padding-bottom: 85px; }
+  padding-bottom: 85px;
+}
+
+.mediumDarkMode {
+  background-color: #9698a6;
+}
 
 .headerContent__summary__title {
   text-align: center;
   font-weight: 400;
   margin-top: -60px;
-  margin-bottom: 28px; }
+  margin-bottom: 28px;
+}
 
 .headerContent__summary__details {
   text-align: center;
-  margin: 0 16px 35px; }
+  margin: 0 16px 35px;
+}
 
 .nav {
   padding: 40px 20px 20px;
   background: white;
   z-index: 2;
-  position: relative; }
+  position: relative;
+}
 
 .morkups {
   position: relative;
   background-image: url("../images/bg-intro-mobile.svg");
   background-size: 100% 82%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+}
 
 .btnPrimary {
   padding: 15px 40px;
@@ -79,40 +129,51 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   display: block;
   color: white;
-  background: linear-gradient(to right, #31d35c, #2bb7da); }
+  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+}
 
 .main {
   background-color: #f3f4f6;
-  padding-bottom: 71px; }
+  padding-bottom: 71px;
+}
 
 .main__intro__title {
   padding-top: 75px;
   padding-bottom: 25px;
-  margin: 0 15%; }
+  margin: 0 15%;
+}
 
 .main__intro__details {
-  margin: 0 25px 0; }
+  margin: 0 25px 0;
+}
 
 .main__intro {
-  margin-bottom: 65px; }
+  margin-bottom: 65px;
+}
 
 .main__services__img {
   display: block;
-  margin: 0 auto 30px; }
+  margin: 0 auto 30px;
+}
 
 .main__services__title {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+}
 
 .main__services__details {
-  margin: 0 25px 40px; }
+  margin: 0 25px 40px;
+}
 
 article {
   background-color: #fafafa;
-  padding-bottom: 87px; }
+  padding-bottom: 87px;
+}
 
 .articles__title {
   padding-top: 95px;
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+}
 
 .card__img {
   width: 330px;
@@ -120,7 +181,8 @@ article {
   margin: auto;
   height: 201px;
   border-top-right-radius: 7px;
-  border-top-left-radius: 7px; }
+  border-top-left-radius: 7px;
+}
 
 .card__divider {
   width: 330px;
@@ -128,19 +190,22 @@ article {
   padding: 0 25px;
   background-color: white;
   border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px; }
+  border-bottom-right-radius: 7px;
+}
 
 .card__divider__author {
   padding-top: 31px;
   text-align: left;
   font-size: 10px;
   opacity: 0.4;
-  padding-bottom: 13px; }
+  padding-bottom: 13px;
+}
 
 .card__divider__title {
   text-align: left;
   font-size: 16px;
-  opacity: 0.7; }
+  opacity: 0.7;
+}
 
 .card__divider__details {
   text-align: left;
@@ -148,15 +213,65 @@ article {
   line-height: 1rem;
   margin-bottom: 20px;
   margin-top: 10px;
-  padding-bottom: 48px; }
+  padding-bottom: 48px;
+}
 
 footer {
-  background-color: #2d314d; }
+  background-color: #2d314d;
+}
 
 .footer__img__logo {
-  filter: invert(98.9%) sepia(18%) saturate(200%) hue-rotate(248.2deg) brightness(166.5%) contrast(213%);
+  -webkit-filter: invert(98.9%) sepia(18%) saturate(200%) hue-rotate(248.2deg) brightness(166.5%) contrast(213%);
+          filter: invert(98.9%) sepia(18%) saturate(200%) hue-rotate(248.2deg) brightness(166.5%) contrast(213%);
   display: block;
   padding: 40px 0;
-  margin: auto; }
+  margin: auto;
+}
 
+.socials {
+  margin-bottom: 30px;
+}
+
+.socials__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.footerMain {
+  /* display: flex;
+    flex-direction: column;*/
+  text-align: center;
+}
+
+.footerMain ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footerMain li {
+  list-style-type: none;
+  padding-bottom: 20px;
+  font-size: 15px;
+}
+
+.footer--btn {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.copyright {
+  color: white;
+  padding: 46px 0;
+}
 /*# sourceMappingURL=style.css.map */
