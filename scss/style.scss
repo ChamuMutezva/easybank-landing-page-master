@@ -65,7 +65,15 @@ display: block;
 margin: auto;
 position: relative;
 top: -118px;
-z-index: 1;
+}
+.showImage {
+    z-index: 1;
+}
+.hideImage {
+    z-index: -1;
+}
+img.openClose {
+    display: block;
 }
 .headerContent {
     background-color:  hsl(0, 0%, 98%);
@@ -218,4 +226,98 @@ footer {
 .copyright {
     color: white;
     padding: 46px 0;
+}
+
+//media queries
+//tablets
+
+@media screen and (min-width: 690px) {
+    .nav__modal {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        left: 170px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        top: 45px;
+        width: 45%;
+    }
+    .mediumDarkMode {
+        background-color: hsl(0, 0%, 98%);
+    }
+    .mockups__img {        
+        z-index: 1;
+    }
+    img.openClose {
+        display: none;
+    }
+    .nav__controls {          
+        .nav__controls--btn {  
+            padding: 9px 30px;           
+            display: block;
+        }
+    }
+    .nav__modal__item {
+        margin-bottom: 0;
+    }
+
+    .mockups__img {
+        width: 50%;       
+        top: 20px;
+    }
+    .headerContent__summary__title {       
+        margin-top: 40px;       
+    }
+    .headerContent__summary {
+        width: 50%;
+        margin: auto;
+    }
+    .main__services {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .main__services__categories {
+        width: 330px;
+        margin: auto;
+    }
+
+    .main__intro__details {
+        margin: 0px 140px 0;
+    }
+
+    .main__services__details {
+        margin: 0 0px 40px;
+    }
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .footerMain {        
+        margin-top: 20px;
+    }
+
+
+}
+
+//desktop media queries
+
+@media screen and (min-width: 1281px) {
+    .headerContent {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .mockups {        
+        background-image: url("../images/bg-intro-desktop.svg");
+        background-size: 100% 82%;
+        background-repeat: no-repeat;
+    }
+
 }

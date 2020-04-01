@@ -15,7 +15,9 @@ openClose.addEventListener("click", function(){
         openClose.setAttribute('src', srcClose)
         modal.style.display = "flex";
        /* headerContent.style.backgroundColor = "hsl(233, 8%, 62%)"*/
-       mockupsImg.style.zIndex = -1; //Hide image
+      // mockupsImg.style.zIndex = -1; Hide image
+      mockupsImg.classList.add("hideImage");
+      mockupsImg.classList.remove("showImage");
         headerContent.classList.add("mediumDarkMode");
        /* headerContent.classList.remove("headerContent");*/
         console.log("hamburger");
@@ -23,7 +25,9 @@ openClose.addEventListener("click", function(){
         console.log("close")
         openClose.setAttribute('src', srcOpen)
         headerContent.classList.remove("mediumDarkMode");
-        mockupsImg.style.zIndex = 1;
+        mockupsImg.classList.add("showImage");
+        mockupsImg.classList.remove("hideImage");
+       // mockupsImg.style.zIndex = 1;
         modal.style.display = "none";
     }
 })
