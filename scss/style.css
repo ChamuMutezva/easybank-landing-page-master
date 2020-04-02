@@ -301,6 +301,7 @@ footer {
 
 .btnPrimary:hover {
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .footerMain a:hover {
@@ -405,6 +406,13 @@ footer {
 }
 
 @media screen and (min-width: 1281px) {
+  .nav__modal {
+    left: 25%;
+    width: 35%;
+  }
+  .nav__controls .nav__controls--btn {
+    margin-right: 170px;
+  }
   p {
     font-size: 1.5rem;
     line-height: 2rem;
