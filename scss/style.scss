@@ -263,7 +263,7 @@ footer {
 
     .mockups__img {
         width: 50%;       
-        top: 20px;
+       /* top: 20px;*/
     }
     .headerContent__summary__title {       
         margin-top: 40px;       
@@ -299,6 +299,7 @@ footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        
     }
     .footerMain {        
         margin-top: 20px;
@@ -310,14 +311,100 @@ footer {
 //desktop media queries
 
 @media screen and (min-width: 1281px) {
+    p {
+        font-size: 1.5rem;
+        line-height: 2rem;        
+    }
+    .mockups__img {
+        width: 120%;
+        /* top: 20px; */
+    }
+    .main {
+        margin-top: -310px;
+        padding: 0 100px;
+    }
+    
+    .main__intro__title {        
+        font-size: 3rem;
+         margin: 0 0; 
+        text-align: left;
+    }
+    .main__intro__details {
+        text-align: left;
+        margin: 0;
+        width: 60%;
+    }
+    .main__services__categories {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .main__services__img {        
+        margin: 0 0 30px;
+    }
+    .main__services__details {
+        text-align: left;        
+    }
+    .headerContent__summary {        
+        margin: 10% 5%;
+    }
+    .headerContent__summary__details
+     {
+        text-align: left;  
+        margin-left: 112px;      
+    }
+    .headerContent__summary__title {
+        font-size: 4rem;
+        text-align: left;
+        margin-left: 106px;
+    }
     .headerContent {
         display: flex;
         flex-direction: row-reverse;
+        padding-bottom: 0;
     }
     .mockups {        
         background-image: url("../images/bg-intro-desktop.svg");
         background-size: 100% 82%;
         background-repeat: no-repeat;
+    }
+    .footerMain {
+        width: 20%;
+        display: flex;
+        padding-top: 35px;
+        justify-content: space-between;
+    }
+    .footerOutro {
+        width: 35%;
+        justify-content: left;
+    }
+    .footerIntro {
+        margin-top: 20px;
+    }
+    .footer--btn {
+        margin-right: 0;
+        margin-top: 60px;
+        margin-bottom: 10px;
+    }
+    .copyright {       
+        text-align: right;
+    }
+    article {        
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .card__divider__author {
+        font-size: 1rem;
+    }
+    .card__divider__title {
+        font-size: 1.5rem;
+    }
+    .card__divider__details {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+    .card__divider, .card__img {
+        width: 320px;
     }
 
 }
