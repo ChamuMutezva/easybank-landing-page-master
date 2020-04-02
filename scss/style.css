@@ -294,6 +294,28 @@ footer {
   padding: 46px 0;
 }
 
+.nav__modal a:hover {
+  padding-bottom: 23px;
+  border-bottom: 4px solid #31d35c;
+}
+
+.btnPrimary:hover {
+  opacity: 0.5;
+}
+
+.footerMain a:hover {
+  color: #31d35c;
+}
+
+.card__divider__title:hover {
+  color: #31d35c;
+}
+
+.socials__links img:hover {
+  -webkit-filter: invert(59.9%) sepia(328%) saturate(500%) hue-rotate(94.2deg) brightness(166.5%) contrast(155%);
+          filter: invert(59.9%) sepia(328%) saturate(500%) hue-rotate(94.2deg) brightness(166.5%) contrast(155%);
+}
+
 @media screen and (min-width: 690px) {
   .nav__modal {
     display: -webkit-box;
@@ -436,6 +458,10 @@ footer {
     margin-left: 106px;
   }
   .headerContent {
+    background-image: url("../images/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 285% 544%;
+    background-size: 83%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -446,9 +472,10 @@ footer {
     padding-bottom: 0;
   }
   .mockups {
-    background-image: url("../images/bg-intro-desktop.svg");
-    background-size: 100% 82%;
-    background-repeat: no-repeat;
+    background-image: none;
+    /* background-image: url("../images/bg-intro-desktop.svg");
+        background-size: 100% 82%;
+        background-repeat: no-repeat;*/
   }
   .footerMain {
     width: 20%;

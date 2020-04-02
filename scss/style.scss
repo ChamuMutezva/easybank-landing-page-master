@@ -228,6 +228,26 @@ footer {
     padding: 46px 0;
 }
 
+
+    //active states 
+    .nav__modal a:hover {        
+        padding-bottom: 23px;
+        border-bottom: 4px solid  hsl(136, 65%, 51%);
+    }
+    .btnPrimary:hover {
+        opacity: 0.5;
+    }
+    .footerMain a:hover{
+        color: hsl(136, 65%, 51%);
+    }
+    .card__divider__title:hover {
+        color: hsl(136, 65%, 51%);
+    }
+    .socials__links img:hover{
+        filter: invert(59.9%) sepia(328%) saturate(500%) hue-rotate(94.2deg) brightness(166.5%) contrast(155%);
+    }
+
+
 //media queries
 //tablets
 
@@ -305,7 +325,6 @@ footer {
         margin-top: 20px;
     }
 
-
 }
 
 //desktop media queries
@@ -359,14 +378,19 @@ footer {
         margin-left: 106px;
     }
     .headerContent {
+        background-image: url("../images/bg-intro-desktop.svg");
+        background-repeat: no-repeat;
+    background-position: 285% 544%;
+    background-size: 83%;
         display: flex;
         flex-direction: row-reverse;
         padding-bottom: 0;
     }
-    .mockups {        
-        background-image: url("../images/bg-intro-desktop.svg");
+    .mockups { 
+        background-image: none;       
+       /* background-image: url("../images/bg-intro-desktop.svg");
         background-size: 100% 82%;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat;*/
     }
     .footerMain {
         width: 20%;
