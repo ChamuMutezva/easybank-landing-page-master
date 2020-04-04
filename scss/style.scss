@@ -45,13 +45,13 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     align-items: center;
    /* row-gap: 30px;*/
-    width: 80%;
+    width: 84%;
     justify-content: space-around;
     margin: auto;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 5px;
     top: 100px;
-    left: 10%;
+    left: 9%;
     padding-top: 40px;
     padding-bottom: 40px;
   }
@@ -231,7 +231,7 @@ footer {
 
     //active states 
     .nav__modal a:hover {        
-        padding-bottom: 23px;
+        padding-bottom: 32px;
         border-bottom: 4px solid  hsl(136, 65%, 51%);
     }
     .btnPrimary:hover {

@@ -14,6 +14,7 @@ openClose.addEventListener("click", function(){
     if (openClose.src.includes(srcOpen)) {
         openClose.setAttribute('src', srcClose)
         modal.style.display = "flex";
+       //modal.style.boxShadow = "16px -9px 11px 11px dimgrey" 
        /* headerContent.style.backgroundColor = "hsl(233, 8%, 62%)"*/
       // mockupsImg.style.zIndex = -1; Hide image
       mockupsImg.classList.add("hideImage");
