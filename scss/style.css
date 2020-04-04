@@ -23,7 +23,7 @@ li {
 p {
   text-align: center;
   font-size: 14px;
-  opacity: 0.3;
+  opacity: 0.7;
   line-height: 1.5rem;
 }
 
@@ -138,12 +138,13 @@ img.openClose {
 }
 
 .btnPrimary {
-  padding: 15px 40px;
-  border-radius: 20px;
+  padding: 15px 35px;
+  border-radius: 60px;
   border: none;
   margin: 0 auto;
   display: block;
   color: white;
+  font-weight: 800;
   background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
   background: linear-gradient(to right, #31d35c, #2bb7da);
 }
@@ -236,8 +237,8 @@ footer {
 }
 
 .footer__img__logo {
-  -webkit-filter: invert(98.9%) sepia(18%) saturate(200%) hue-rotate(248.2deg) brightness(166.5%) contrast(213%);
-          filter: invert(98.9%) sepia(18%) saturate(200%) hue-rotate(248.2deg) brightness(166.5%) contrast(213%);
+  -webkit-filter: invert(90.7%) sepia(29.2%) saturate(185.1%) hue-rotate(183.7deg) brightness(95.5%) contrast(181.3%);
+          filter: invert(90.7%) sepia(29.2%) saturate(185.1%) hue-rotate(183.7deg) brightness(95.5%) contrast(181.3%);
   display: block;
   padding: 40px 0;
   margin: auto;
@@ -405,9 +406,13 @@ footer {
 }
 
 @media screen and (min-width: 1281px) {
+  .nav {
+    padding: 20px 20px 27px;
+  }
   .nav__modal {
     left: 37.4%;
     width: 35%;
+    top: 27px;
   }
   .nav__controls .nav__controls--btn {
     margin-right: 170px;
@@ -432,18 +437,20 @@ footer {
     /* top: 20px; */
   }
   .main {
-    margin-top: -310px;
+    margin-top: -275px;
     padding: 0 30px 0 169px;
   }
   .main__intro__title {
-    font-size: 3rem;
+    font-size: 2.42rem;
     margin: 0 0;
     text-align: left;
+    opacity: .8;
   }
   .main__intro__details {
     text-align: left;
     margin: 0;
-    width: 60%;
+    opacity: 0.5;
+    width: 55%;
   }
   .main__services__categories {
     display: -webkit-box;
@@ -456,13 +463,19 @@ footer {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
-    width: 255px;
+    width: 256px;
+    margin-left: 0;
+  }
+  .main__services__title {
+    font-size: 1.5rem;
   }
   .main__services__img {
     margin: 0 0 30px;
   }
   .main__services__details {
     text-align: left;
+    font-size: 0.97rem;
+    line-height: 1.7rem;
   }
   .headerContent__summary {
     margin: 0px 0 0 170px;
@@ -524,18 +537,31 @@ footer {
     margin-top: 60px;
     margin-bottom: 10px;
   }
+  .footer__img__logo {
+    margin: 0;
+  }
   .copyright {
     text-align: right;
   }
   article {
     padding-left: 100px;
     padding-right: 100px;
+    padding-bottom: 59px;
+  }
+  .articles__title {
+    text-align: left;
+    margin-left: 28px;
+    font-size: 2.4rem;
+    opacity: 0.7;
+    padding-top: 90px;
+    padding-bottom: 47px;
   }
   .card__divider__author {
-    font-size: 1rem;
+    font-size: 0.62rem;
   }
   .card__divider__details {
     line-height: 1.5rem;
+    padding-bottom: 27px;
   }
   .card__divider, .card__img {
     width: 255px;
