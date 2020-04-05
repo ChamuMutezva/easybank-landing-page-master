@@ -247,6 +247,9 @@ footer {
     .socials__links img:hover{
         filter: invert(59.9%) sepia(328%) saturate(500%) hue-rotate(94.2deg) brightness(166.5%) contrast(155%);
     }
+    .modal__shadow {
+        box-shadow: 7px -12px 11px 5px hsl(233, 8%, 62%);
+    }
 
 
 //media queries
@@ -254,7 +257,7 @@ footer {
 
 @media screen and (min-width: 690px) {
     .nav__modal {
-        display: flex;
+        display: flex !important;
         flex-direction: row;
         align-items: baseline;
         left: 170px;
@@ -263,6 +266,7 @@ footer {
         top: 45px;
         width: 45%;
     }
+  
     .mediumDarkMode {
         background-color: hsl(0, 0%, 98%);
     }
@@ -274,12 +278,15 @@ footer {
     }
     .nav__controls {          
         .nav__controls--btn {  
-            padding: 9px 30px;           
+            padding: 13px 27px;           
             display: block;
         }
     }
     .nav__modal__item {
         margin-bottom: 0;
+    }
+    .modal__shadow {
+        box-shadow: none;
     }
 
     .mockups__img {
@@ -336,7 +343,7 @@ footer {
     }
     .nav__modal {        
         left: 37.4%;//537px
-        width: 35%;
+        width: 30%;
         top: 27px;
       }
     .nav__controls .nav__controls--btn {        
@@ -347,8 +354,12 @@ footer {
         height: 1.25rem;
         margin-top: 10px;
     }
+    .nav__modal__item:first-child{
+        margin-left: -55px;
+    }
+   
     .nav__modal__item {
-        margin: 0px -55px;
+       /* margin: 0px -55px;*/
     }
     .nav__modal a {
            opacity: .4;
@@ -372,12 +383,14 @@ footer {
         margin: 0 0;
         text-align: left;
         opacity: .8;
+        padding-top: 107px;
+        padding-bottom: 20px;
     }
     .main__intro__details {
         text-align: left;
         margin: 0;
         opacity: 0.5;
-        width: 55%;
+        width: 50%;
     }
     .main__services__categories {
         display: flex;
@@ -390,12 +403,13 @@ footer {
         font-size: 1.5rem;
     }
     .main__services__img {        
-        margin: 0 0 30px;
+        margin: 4px 0 37px;
     }
     .main__services__details {
         text-align: left; 
         font-size: 0.97rem; 
-        line-height: 1.7rem;     
+        line-height: 1.7rem;  
+        margin: 0 0px 100px; 
     }
     .headerContent__summary {        
        // margin: 173px 0 0 170px;
@@ -441,7 +455,7 @@ font-weight: 300;
         justify-content: left;
     }
     .footerIntro {
-        margin-top: 20px;
+        margin-top: 12px;
     }
     .footer--btn {
         margin-right: 0;
@@ -450,6 +464,9 @@ font-weight: 300;
     }
     .footer__img__logo {       
         margin: 0;
+    }
+    .socials__links li {
+        margin: 0 6px;
     }
     .copyright {       
         text-align: right;
@@ -475,11 +492,11 @@ font-weight: 300;
     }
     .card__divider__details {
        // font-size: 1.1rem;
-        line-height: 1.5rem;
+        line-height: 1.1rem;
         padding-bottom: 27px;
     }
     .card__divider, .card__img {
-        width: 255px;
+        width: 260px;
     }
 
 

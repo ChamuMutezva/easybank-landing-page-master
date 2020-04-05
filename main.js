@@ -14,6 +14,7 @@ openClose.addEventListener("click", function(){
     if (openClose.src.includes(srcOpen)) {
         openClose.setAttribute('src', srcClose)
         modal.style.display = "flex";
+        modal.classList.add("modal__shadow");
        //modal.style.boxShadow = "16px -9px 11px 11px dimgrey" 
        /* headerContent.style.backgroundColor = "hsl(233, 8%, 62%)"*/
       // mockupsImg.style.zIndex = -1; Hide image
@@ -28,6 +29,7 @@ openClose.addEventListener("click", function(){
         headerContent.classList.remove("mediumDarkMode");
         mockupsImg.classList.add("showImage");
         mockupsImg.classList.remove("hideImage");
+        modal.classList.remove("modal__shadow");
        // mockupsImg.style.zIndex = 1;
         modal.style.display = "none";
     }
