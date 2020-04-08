@@ -207,7 +207,23 @@
   </footer>
 
 
-<script src="main.js"></script>
+  <script src="main.js"></script>
+  <script>
+    //check if service worker is supported
+    if (navigator.serviceWorker) {
+      console.log("Service worker is supported with this browser");
+      //register a service worker file
+      navigator.serviceWorker.register("serviceWorker.js")
+      .then(registration => {
+        console.log("Service worker has been registered", registration)
+      })
+      .catch(err => console.log(err)
+      )
+    } else {
+      console.log("Service worker is not permitted")
+    }
+
+  </script>
 </body>
 
 </html>
