@@ -4,7 +4,7 @@
 
 const cacheName = "cache-v1"
 
-const precachedResouces = [
+const precachedResources = [
     "/",
     "index.html",
     "images/bg-intro-desktop.svg",
@@ -35,6 +35,12 @@ const precachedResouces = [
 self.addEventListener("install", event => {
     console.log("Service worker installing");
     self.skipWaiting()
+    event.waitUntil(
+        caches.open(cacheName)
+        .then(cache => {
+            return cache.addAll(precachedResources);
+        })
+    )
     //add a call to skip waiting
 })
 
@@ -45,6 +51,14 @@ self.addEventListener("activate", event => {
 
 //fetch events 
 self.addEventListener("fetch", event => {
-    console.log("Fetching... ", event.request.url)
+    console.log("Fetching... ", event.request.url);
+    event.respondWith(caches.match(event.request)
+    .then(cachedResponse => {
+        if(cachedResponse) {
+            return cachedResponse
+        }
+        return fetch(event.request)
+    })
+    )
 })
 
